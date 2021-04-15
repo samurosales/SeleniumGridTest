@@ -1,0 +1,9 @@
+language: node_js
+node_js:
+  - "14"
+script:
+   - echo "creando integracion"
+   - npm install
+   - echo "correindo las pruebas"
+   - npm test
+   - echo "pruebas exitosas"
