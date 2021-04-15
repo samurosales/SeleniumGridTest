@@ -43,7 +43,7 @@ process.on('unhandledRejection', () => {});
 
             it('Inicia session Fallida', async() => {
                 
-                await expect(driver.wait(until.urlContains('/login')))
+                driver.wait(until.urlContains('/login'))
 
             });
 

@@ -43,7 +43,7 @@ process.on('unhandledRejection', () => {});
 
             it('Inicia session', async() => {
                                 
-                await expect(driver.wait(until.urlContains('/admin/dashboard')))
+                driver.wait(until.urlContains('/admin/dashboard'))
 
             });
 
