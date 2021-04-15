@@ -57,6 +57,8 @@ process.on('unhandledRejection', () => {});
             it('Click en boton de Producto', async() => {
                 
                 await page.clickButton('prBtn')
+                const inputValue = await page.getInputValue()
+                expect(inputValue).to.eql('')
 
             });
 

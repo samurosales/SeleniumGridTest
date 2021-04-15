@@ -66,4 +66,15 @@ Page.prototype.clickButton = async function(id){
 
 }
 
+
+Page.prototype.getInputValue = async function(){
+
+    let nameInput = await this.findById('txtNombre');
+
+    return nameInput.textContent
+
+}
+
+
+
 module.exports = Page;

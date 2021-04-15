@@ -65,8 +65,6 @@ this.write = async function(el, txt) {
 };
 
 
-
-
 };
 
 module.exports = Page;
