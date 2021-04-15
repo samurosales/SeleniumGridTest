@@ -22,7 +22,7 @@ process.on('unhandledRejection', () => {});
 
                 page = new Page();
                 driver = page.driver;
-                await page.visit('http://localhost:3000/login');
+                await page.visit(`http://35.193.209.112:3000/login`);
 
             });
 
@@ -44,7 +44,7 @@ process.on('unhandledRejection', () => {});
 
             it('Click pestana de Productos', async() => {
 
-                await page.visit('http://localhost:3000/admin/crear-productos');
+                await page.visit(`http://35.193.209.112:3000/admin/crear-productos`);
 
             });
 

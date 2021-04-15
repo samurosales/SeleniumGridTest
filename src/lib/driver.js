@@ -13,11 +13,14 @@ SeleniumServer = require('selenium-webdriver/remote').SeleniumServer;
 var cbtHub = `http://104.198.140.6:4444/wd/hub`
 
 var caps = {
-    name: 'Chrome Test',
-    setPageLoadStrategy: 'eager',
-    browserName: 'chrome',
-    browserVersion: '89.0.4389.82'
-};
+    name: "Chrome Test",
+    setPageLoadStrategy: "eager",
+    browserName: "chrome",
+    browserVersion: "89.0.4389.82",
+    'chromeOptions': {
+      'args': ['--window-size=1920x1080']
+    }
+  };
 
 
 
