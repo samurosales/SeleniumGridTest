@@ -25,10 +25,7 @@ process.on('unhandledRejection', () => {});
 
             });
 
-            after(async() => {
-                await page.quit();
-            });
-
+           
 
             it('Ingresa Datos Correctos', async() => {
                 await page.submitUserData('usuario', 'algo');
@@ -37,7 +34,6 @@ process.on('unhandledRejection', () => {});
             it('Click en boton de login', async() => {
 
                 await page.clickButton('login')
-                await driver.manage().setTimeouts( { implicit: 5000 } );
 
             });
 
@@ -45,6 +41,11 @@ process.on('unhandledRejection', () => {});
                 
                 driver.wait(until.urlContains('/login'))
 
+            });
+
+
+            after(async() => {
+                await page.quit();
             });
 
 
