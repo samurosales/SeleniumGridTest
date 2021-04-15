@@ -37,7 +37,6 @@ process.on('unhandledRejection', () => {});
             it('Click en boton de login', async() => {
 
                 await page.clickButton('login')
-                await driver.manage().setTimeouts( { implicit: 5000 } );
 
             });
 
