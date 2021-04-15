@@ -13,7 +13,7 @@ process.on('unhandledRejection', () => {});
 (async function example() {
     try {
 
-        describe('Prueba de creacion de Prducto - Correcta', async function() { 
+        describe('Prueba de creacion de Producto - Correcta', async function() { 
             this.timeout(50000);
             var driver, page;
 
@@ -54,6 +54,11 @@ process.on('unhandledRejection', () => {});
 
             });
 
+            it('Click en boton de Producto', async() => {
+                
+                await page.clickButton('prBtn')
+
+            });
 
         });
 
