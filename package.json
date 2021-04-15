@@ -4,7 +4,7 @@
     "description": "Google home page automated test ",
     "main": "index.js",
     "scripts": {
-        "test": "mocha ./src/test --reporter mochawesome --reporter-options autoOpen=true"
+        "test": "mocha ./src/test/TestOrder.js --reporter mochawesome --reporter-options autoOpen=true"
     },
     "repository": {
         "type": "git",
