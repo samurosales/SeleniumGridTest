@@ -50,7 +50,7 @@ process.on('unhandledRejection', () => {});
 
             it('Llena los datos del Producto', async() => {
                 
-                await page.submitProductData('cirque du freak', null, 'mejores libros de la historia');
+                await page.submitProductData('cirque du freak', '', 'mejores libros de la historia');
 
             });
 
@@ -59,7 +59,7 @@ process.on('unhandledRejection', () => {});
                 await page.clickButton('prBtn')
                 // driver.wait(until.urlContains('/admin/crear-productos'));
                 const inputValue = await page.getInputValue()
-                expect(inputValue.value).to.not.equal('')
+                expect(inputValue.value !== '')
 
             });
 
