@@ -57,8 +57,9 @@ process.on('unhandledRejection', () => {});
             it('Click en boton de Producto', async() => {
                 
                 await page.clickButton('prBtn')
-                driver.wait(until.urlContains('/admin/crear-productos'));
-
+                // driver.wait(until.urlContains('/admin/crear-productos'));
+                const inputValue = await page.getInputValue()
+                expect(inputValue).to.eql('')
 
             });
 
