@@ -59,7 +59,7 @@ process.on('unhandledRejection', () => {});
                 await page.clickButton('prBtn')
                 // driver.wait(until.urlContains('/admin/crear-productos'));
                 const inputValue = await page.getInputValue()
-                expect(inputValue).to.equal('')
+                expect(inputValue.value).to.equal('')
 
             });
 
