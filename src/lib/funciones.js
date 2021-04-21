@@ -71,7 +71,7 @@ Page.prototype.getInputValue = async function(){
 
     let nameInput = await this.findById('txtNombre');
 
-    return nameInput.textContent
+    return nameInput
 
 }
 
